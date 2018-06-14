@@ -36,7 +36,7 @@ app.controller('mainController', ($scope) => {
 
             newCard = assignCard();
 
-            while (this.cards.includes(newCard.card)) {
+            while ($scope.game.dealer.cards.includes(newCard.card) || $scope.game.player.cards.includes(newCard.card)) {
                 newCard = assignCard();
             }
 
