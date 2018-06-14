@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Mindit BlackJack</title>
+</head>
+
+<body>
+    <div class="app-container" ng-app="mainApp" ng-controller="mainController">
+
+
+        <div class="main-box">
+            <div class="cards dealer">
+                <img ng-repeat="card in game.dealer.cards" ng-src="img/cards/{{card}}.png" alt="card">
+                <img ng-show="game.dealer.cards.length < 2" src="img/cards/green_back.png" alt="card">
+            </div>
+            <h1>DEALER</h1>
+
+            <div class="separator"></div>
+
+            <h1>PLAYER</h1>
+            <div class="cards player">
+                <img ng-repeat="card in game.player.cards" ng-src="img/cards/{{card}}.png" alt="card">
+            </div>
+        </div>
+
+
+        <div class="side-box">
+            <div>
+                <a href="#" class="btn new" ng-click="newGame()">NEW GAME</a>
+            </div>
+            <div>
+                <a href="#" class="btn hit" ng-click="hit()">HIT</a>
+            </div>
+            <div>
+                <a href="#" class="btn stand" ng-click="stand()">STAND</a>
+            </div>
+
+            <div class="log-title">LOG</div>
+            <div class="log">
+                <p ng-repeat="msg in log" ng-class="msg.css">{{msg.text}}</p>
+            </div>
+        </div>
+        
+
+    </div>
+
+</body>
+
+</html>
