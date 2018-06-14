@@ -9,6 +9,7 @@
     <script src="js/app.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
     <title>Mindit BlackJack</title>
 </head>
 
@@ -33,19 +34,23 @@
 
 
         <div class="side-box">
-            <div>
-                <a href="#" class="btn new" ng-click="newGame()">NEW GAME</a>
-            </div>
-            <div>
-                <a href="#" class="btn hit" ng-click="hit()">HIT</a>
-            </div>
-            <div>
-                <a href="#" class="btn stand" ng-click="stand()">STAND</a>
+            <div class="buttons-box">
+                <div>
+                    <a href="#" class="btn new" ng-click="newGame()">NEW GAME</a>
+                </div>
+                <div>
+                    <a href="#" class="btn hit" ng-click="hit()">HIT</a>
+                </div>
+                <div>
+                    <a href="#" class="btn stand" ng-click="stand()">STAND</a>
+                </div>
             </div>
 
-            <div class="log-title">LOG</div>
-            <div class="log">
-                <p ng-repeat="msg in log" ng-class="msg.css">{{msg.text}}</p>
+            <div class="log-box">
+                <div class="log-title">LOG</div>
+                <div class="log">
+                    <p ng-repeat="msg in log" ng-class="msg.css">{{msg.text}}</p>
+                </div>
             </div>
         </div>
         

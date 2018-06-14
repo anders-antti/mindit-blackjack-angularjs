@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1140px) {
+    
+    body {
+        font-size: 100%;
+    }
+
+    .app-container {
+        width: 100%;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        font-size: 100%;
+    }
+    
+    h1 {
+        font-size: 90%;
+    }
+
+    h1:first-of-type {
+        margin-top: 10px;
+    }
+    
+    h1:last-of-type {
+        margin-bottom: 10px;
+    }
+
+    .app-container {
+        width: 100%;
+        display: block;
+        font-size: 100%;
+    }
+
+    .main-box {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .cards img {
+        width: 25%;
+        padding: 1%;
+    }
+
+    .side-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .buttons-box {
+        margin-right: 5%;
+        margin-top: 15px;
+        width: 30%;
+    }
+
+    .log-box {
+        width: 65%;
+    }
+
+    .log-title {
+        margin-top: 15px;
+    }
+}
