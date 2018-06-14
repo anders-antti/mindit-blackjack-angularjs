@@ -36,12 +36,10 @@
     .main-box {
         width: 100%;
         border-right: none;
-        border-bottom: 1px solid #d4d4d4;
     }
 
     .cards img {
-        width: 25%;
-        padding: 1%;
+        width: 20%;
     }
 
     .side-box {
@@ -52,15 +50,26 @@
 
     .buttons-box {
         margin-right: 5%;
-        margin-top: 15px;
         width: 30%;
+    }
+
+    .btn {
+        margin: 10px 0;
+    }
+
+    .btn :first-of-type {
+        margin-top: 0;
     }
 
     .log-box {
         width: 65%;
     }
 
-    .log-title {
-        margin-top: 15px;
+    .log p {
+        font-size: 80%;
     }
+
+    .log-title {
+        margin-top: 10px;
+    }    
 }
